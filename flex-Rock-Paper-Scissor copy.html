@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    Rock Paper Scissors
+  </title>
+  <link rel="stylesheet" href="Style/10-rock-paper-scissor.css">
+</head>
+
+<body>
+  <p class="css-heading">
+    Rock Paper Scissors
+  </p>
+  <p class="js-result css-result"></p>
+  <p class="js-moves css-moves">
+
+  </p>
+  <p class="js-score css-score"></p>
+  <div class="button-container">
+    <button onclick="
+      // if computer picks Rock
+        playGame('Rock')" class="button-style">
+      <img src="Image/rock-emoji.png" class="move-icon">
+    </button>
+
+    <button onclick="
+        // if computer picks Pape
+        playGame('Paper');
+      " class="button-style">
+      <img src="Image/paper-emoji.png" class="move-icon">
+    </button>
+
+    <button onclick="
+      // if computer picks Rock
+      
+      playGame('Scissors');
+      //console.log(`You picked ${yourPick}. Computer picked ${computerMove}. ${result}.`)
+        " class="button-style">
+      <img src="Image/scissors-emoji.png" class="move-icon">
+    </button>
+  </div>
+  <button onclick=" 
+            score.Wins =0;
+            score.Losses=0;
+            score.Ties=0;
+        
+            //alert(`Wins: ${score.Wins}. Lossse: ${score.Losses}. Ties:${score.Ties}.`)
+            localStorage.removeItem('Save');
+            updateScore();
+            " class="button-reset">
+    Reset Score
+  </button>
+  <script src="Scripts/10-rock-paper-scissor.js">
+
+  </script>
+</body>
+
+</html>
